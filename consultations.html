@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultations - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="consultations-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link active"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Consultations</h1>
+                <p>Schedule and manage your consultations with our AI pharmacist.</p>
+            </header>
+            <div class="content">
+                <!-- Upcoming Consultations -->
+                <section class="upcoming-consultations">
+                    <h2>Upcoming Consultations</h2>
+                    <ul>
+                        <li>Dr. Smith - Cardiology Consultation on Jan 15, 2023</li>
+                        <li>Dr. Johnson - General Checkup on Feb 20, 2023</li>
+                    </ul>
+                </section>
+
+                <!-- Schedule a Consultation -->
+                <section class="schedule-consultation">
+                    <h2>Schedule a New Consultation</h2>
+                    <form id="schedule-consultation-form">
+                        <label for="doctor-name">Doctor's Name</label>
+                        <input type="text" id="doctor-name" placeholder="e.g., Dr. Emily Smith">
+
+                        <label for="specialization">Specialization</label>
+                        <input type="text" id="specialization" placeholder="e.g., Cardiology">
+
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+
+                        <button type="submit" class="btn-primary"><i data-lucide="calendar-plus"></i> Schedule</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

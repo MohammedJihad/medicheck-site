@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Profile - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="health-profile-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link active"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Health Profile</h1>
+                <p>View and manage your personal health information and medical history.</p>
+            </header>
+            <div class="content">
+                <!-- Personal Details Section -->
+                <section class="personal-details">
+                    <h2>Personal Information</h2>
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <h3>Name</h3>
+                            <p>John Doe</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3>Date of Birth</h3>
+                            <p>January 15, 1980</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3>Blood Type</h3>
+                            <p>O+</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3>Gender</h3>
+                            <p>Male</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Medical Conditions Section -->
+                <section class="medical-conditions">
+                    <h2>Medical Conditions</h2>
+                    <ul>
+                        <li>Hypertension</li>
+                        <li>Type 2 Diabetes</li>
+                    </ul>
+                </section>
+
+                <!-- Allergies Section -->
+                <section class="allergies">
+                    <h2>Allergies</h2>
+                    <ul>
+                        <li>Penicillin</li>
+                        <li>Peanuts</li>
+                    </ul>
+                </section>
+
+                <!-- Edit Profile Section -->
+                <section class="edit-profile">
+                    <h2>Edit Health Profile</h2>
+                    <form id="edit-profile-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+
+                        <label for="blood-type">Blood Type</label>
+                        <select id="blood-type">
+                            <option value="O+">O+</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O-">O-</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+
+                        <button type="submit" class="btn-primary"><i data-lucide="save"></i> Save Changes</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="reminders-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar collapsed" id="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link active"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Medication Reminders</h1>
+                <p>Set and manage your reminders to never miss a dose.</p>
+            </header>
+
+            <div class="content">
+                <!-- Reminder List -->
+                <section class="reminder-list">
+                    <h2>Active Reminders</h2>
+                    <ul id="reminder-items">
+                        <li>
+                            <span>Lisinopril - 8:00 AM</span>
+                            <button class="btn-icon"><i data-lucide="edit"></i></button>
+                            <button class="btn-icon"><i data-lucide="trash-2"></i></button>
+                        </li>
+                        <li>
+                            <span>Metformin - With Dinner</span>
+                            <button class="btn-icon"><i data-lucide="edit"></i></button>
+                            <button class="btn-icon"><i data-lucide="trash-2"></i></button>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Add Reminder Form -->
+                <section class="add-reminder">
+                    <h2>Add a New Reminder</h2>
+                    <form id="reminder-form">
+                        <label for="medication">Medication Name</label>
+                        <input type="text" id="medication" placeholder="Enter medication name..." required>
+
+                        <label for="time">Reminder Time</label>
+                        <input type="time" id="time" required>
+
+                        <button type="submit" class="btn-primary"><i data-lucide="plus"></i> Add Reminder</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

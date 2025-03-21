@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medications - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="medications-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link active"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Medications</h1>
+                <p>Manage your prescriptions and learn about your medications.</p>
+            </header>
+            <div class="content">
+                <!-- Medications List -->
+                <section class="medications-list">
+                    <h2>Your Current Medications</h2>
+                    <table class="medications-table">
+                        <thead>
+                            <tr>
+                                <th>Medication</th>
+                                <th>Dosage</th>
+                                <th>Frequency</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lisinopril</td>
+                                <td>10mg</td>
+                                <td>Once daily</td>
+                                <td>
+                                    <button class="btn-icon"><i data-lucide="edit"></i></button>
+                                    <button class="btn-icon"><i data-lucide="trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Metformin</td>
+                                <td>500mg</td>
+                                <td>Twice daily</td>
+                                <td>
+                                    <button class="btn-icon"><i data-lucide="edit"></i></button>
+                                    <button class="btn-icon"><i data-lucide="trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Add Medication -->
+                <section class="add-medication">
+                    <h2>Add a New Medication</h2>
+                    <form id="add-medication-form">
+                        <label for="medication-name">Medication Name</label>
+                        <input type="text" id="medication-name" placeholder="e.g., Amoxicillin">
+
+                        <label for="dosage">Dosage</label>
+                        <input type="text" id="dosage" placeholder="e.g., 500mg">
+
+                        <label for="frequency">Frequency</label>
+                        <input type="text" id="frequency" placeholder="e.g., Twice daily">
+
+                        <button type="submit" class="btn-primary"><i data-lucide="plus"></i> Add Medication</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

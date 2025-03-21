@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="home-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link active"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Welcome to MediCheck</h1>
+                <p>Manage your health, medications, and consultations all in one place.</p>
+            </header>
+            <div class="content">
+                <!-- Search Bar -->
+                <section class="search">
+                    <h2>Search for Medicines</h2>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search for medicines here...">
+                        <button type="submit" class="btn-primary"><i data-lucide="search"></i> Search</button>
+                    </form>
+                </section>
+
+                <!-- Dashboard Statistics -->
+                <section class="stats">
+                    <h2>Your Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>5</h3>
+                            <p>Medications</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>2</h3>
+                            <p>Upcoming Consultations</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>8</h3>
+                            <p>Reminders Set</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section class="features">
+                    <h2>Our Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i data-lucide="clock" class="feature-icon"></i>
+                            <h3>24/7 Availability</h3>
+                            <p>Access our AI pharmacist anytime, day or night.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="shield-check" class="feature-icon"></i>
+                            <h3>Safe Recommendations</h3>
+                            <p>Get personalized medication advice based on your health profile.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="message-square" class="feature-icon"></i>
+                            <h3>Instant Consultations</h3>
+                            <p>Chat with our AI for quick answers to your health questions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="zap" class="feature-icon"></i>
+                            <h3>Smart Reminders</h3>
+                            <p>Never miss a dose with our intelligent reminder system.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

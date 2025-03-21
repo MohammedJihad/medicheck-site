@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - MediCheck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="history-page">
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i data-lucide="brain" class="logo-icon"></i>
+                <span class="brand-name">MediCheck</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i><span>Home</span></a></li>
+                    <li><a href="medications.html" class="nav-link"><i data-lucide="pill"></i><span>Medications</span></a></li>
+                    <li><a href="consultations.html" class="nav-link"><i data-lucide="message-square"></i><span>Consultations</span></a></li>
+                    <li><a href="reminders.html" class="nav-link"><i data-lucide="clock"></i><span>Reminders</span></a></li>
+                    <li><a href="health-profile.html" class="nav-link"><i data-lucide="shield-check"></i><span>Health Profile</span></a></li>
+                    <li><a href="history.html" class="nav-link active"><i data-lucide="file-text"></i><span>History</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>History</h1>
+                <p>Review your past consultations, prescriptions, and medication history.</p>
+            </header>
+            <div class="content">
+                <!-- Timeline Section -->
+                <section class="history-timeline">
+                    <h2>Medical History Timeline</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h3>Cardiology Consultation</h3>
+                                <p>Routine checkup with Dr. Smith. Blood pressure and heart rate were within normal limits.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h3>Diabetes Management</h3>
+                                <p>Consultation with Dr. Johnson. Adjusted medication for Type 2 Diabetes.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021</div>
+                            <div class="timeline-content">
+                                <h3>Routine Checkup</h3>
+                                <p>Annual checkup with Dr. Lee. All vital signs were normal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Past Prescriptions Section -->
+                <section class="past-prescriptions">
+                    <h2>Past Prescriptions</h2>
+                    <table class="prescriptions-table">
+                        <thead>
+                            <tr>
+                                <th>Medication</th>
+                                <th>Dosage</th>
+                                <th>Prescribed By</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lisinopril</td>
+                                <td>10mg</td>
+                                <td>Dr. Smith</td>
+                                <td>January 15, 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Metformin</td>
+                                <td>500mg</td>
+                                <td>Dr. Johnson</td>
+                                <td>February 20, 2022</td>
+                            </tr>
+                            <tr>
+                                <td>Amlodipine</td>
+                                <td>5mg</td>
+                                <td>Dr. Lee</td>
+                                <td>March 5, 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
